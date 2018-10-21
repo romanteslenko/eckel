@@ -6,14 +6,14 @@ class A {
     }
 
     void f2() {
-        System.out.println("A test");
+        System.out.println("A com.teslenko.test");
     }
 }
 
 class B extends A {
     @Override
     void f2() {
-        System.out.println("B test");
+        System.out.println("B com.teslenko.test");
     }
 }
 
