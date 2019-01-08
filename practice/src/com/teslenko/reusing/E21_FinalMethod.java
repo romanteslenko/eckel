@@ -8,7 +8,7 @@ class FinalMethodContainer {
 
 public class E21_FinalMethod extends FinalMethodContainer {
 //    @Override
-//    final void print() {
+//    final void foo() {
 //        System.out.println("Print in E21_FinalMethod");
 //    }
 
