@@ -48,8 +48,8 @@ class Sandwich extends PortableLunch {
     private Lettuce l = new Lettuce();
     private Pickle p = new Pickle();
     public Sandwich() {
-        System.out.println("Sandwich()"); }
-
+        System.out.println("Sandwich()");
+    }
 }
 
 public class E11_Sandwich {
