@@ -1,5 +1,5 @@
 //: interfaces/interfaceprocessor/Processor.java
-package interfaces.interfaceprocessor;
+package com.teslenko.interfaces.interfaceprocessor;
 
 public interface Processor {
   String name();
