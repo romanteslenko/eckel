@@ -1,8 +1,8 @@
 package com.teslenko.innerclasses;
 
-class A {
+class First {
     protected int i;
-    A(int i) {
+    First(int i) {
         this.i = i;
     }
     void printI() {
@@ -10,9 +10,9 @@ class A {
     }
 }
 
-class B {
-    A createA(int i) {
-        return new A(i) {
+class Second {
+    First createA(int i) {
+        return new First(i) {
             {
                 this.i *= 2;
             }
@@ -26,9 +26,9 @@ class B {
 
 public class E15_AnonymousCreatesOuter {
     public static void main(String[] args) {
-        A orig = new A(10);
+        First orig = new First(10);
         orig.printI();
-        A anonym = new B().createA(10);
+        First anonym = new Second().createA(10);
         anonym.printI();
     }
 }

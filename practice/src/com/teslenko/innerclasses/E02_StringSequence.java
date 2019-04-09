@@ -6,9 +6,9 @@ interface Selector {
     void next();
 }
 
-class Sequence {
-    private Object[] items;
-    private int next;
+class Sequence {   // protected members needed for further inheritance in E22
+    protected Object[] items;
+    protected int next;
     Sequence(int size) {
         items = new Object[size];
     }
@@ -29,7 +29,7 @@ class Sequence {
                 " to this sequence instance");
     }
 
-    private class SequenceSelector implements Selector {
+    protected class SequenceSelector implements Selector {
         int i;
         @Override
         public boolean end() {
